@@ -6,6 +6,6 @@ In a game of SKATE player one will name a trick. If player one lands that trick,
 The app is built in HTML, CSS and vanilla Javascript.
 CSS layout is sprinkled with some Flexbox for layout.
 
-Javascript includes features to players choose between a game length of SKATE or KICKFLIP, disable the game when a winner has been declared and feeds back info to used via DOM manipulation.
+Javascript includes features for players choose between a game length of SKATE or KICKFLIP, disable the game when a winner has been declared and gives feedback during the game via DOM manipulation.
 
 
