@@ -1,5 +1,3 @@
-// let skate = ['/', 'S', 'K', 'A', 'T', 'E']
-// let kickflip = ['/', 'K', 'I', 'C', 'K', 'F', 'L', 'I', 'P']
 let player1score = 0;
 let player2score = 0;
 let targetScore = 'Skate';
@@ -34,7 +32,6 @@ player1Button.addEventListener('click', function (e) {
         if (player1score === targetScore) {
             gameOver = true;
             p1container.classList.add('loser');
-
             p2container.classList.add('winner')
             p2score.classList.remove('line-through');
             p2score.innerText = 'Winner!';
@@ -50,12 +47,12 @@ player2Button.addEventListener('click', function (e) {
         p2score.append(innerText = targetWord[player2score - 1]);
         if (player2score === targetScore) {
             gameOver = true;
-            p2score.classList.add('loser');
-            p1score.classList.add('winner');
+            p2container.classList.add('loser');
+            p1container.classList.add('winner')
             p1score.classList.remove('line-through');
             p1score.innerText = 'Winner!';
+            payer2Button.disabled = true;
             player1Button.disabled = true;
-            player2Button.disabled = true;
         }
     }
 })
